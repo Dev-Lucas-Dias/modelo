@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Mdodelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <h1 id="logo">Logo</h1>
+        <button id="casinha"><ion-icon name="home-outline"></ion-icon></button>
+        <h3 id="C">Contato</h3>
+        <h3 id="S" onmouseover= "list()" onmouseout="fech()"> 
+            Produtos
+             <ul id="list1">
+                <li>
+                    Utencílhos <br>Domesticos
+                </li>
+                <li>
+                    Panelas
+                </li>
+                <li>
+                    Ferramentas
+                </li>
+                <li>
+                    Diversos
+                </li>
+    
+            </ul>
+        </h3>
+        <h3 id="S" onmouseover= "lista()" onmouseout="fecha()"> 
+            serviços
+             <ul id="list">
+                <li>
+                    Consertos<br>De<br>Fogão
+                </li>
+                <li>
+                    Consertos<br>De<br>Panelas
+                </li>
+                <li>
+                    Consertos<br>De<br>Eletrodomésticos
+                </li>
+    
+            </ul>
+        </h3>
+       
+        <h3>Orçamento</h3>
+        <h3>Local</h3>
+<button onclick="menu()" ondblclick="menufech()" type="button" id="menu"><ion-icon name="menu-outline"></ion-icon>
+    <ul id="listamenu">
+        <li>Logo</li>
+        <li>Contato</li>
+        <li>Produtos</li>
+        <li>serviços</li>
+        <li>Orçamento</li>
+        <li>Local</li>
+    </ul></button>
+    </header>
+    <script src="/javascript/event.js"></script>
+</body>
+</html>
