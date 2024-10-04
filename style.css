@@ -7,35 +7,37 @@
     
 }
 header{
+   padding-left: 5.0rem;
+    max-width: 1400px;
   margin-top: 5px; 
-   width:80%;
     display:flex;
-   /* border: 1px solid red;*/
+   border: 1px solid red;
     margin: auto;
     gap: 2rem;
-   
-    height: 60px;
+    height: 6.0rem;
     border-radius: 2%;
     align-items: normal;
+    background-color: yellow;
+    padding-top: 7px;
 }
 #logo{
     color: black;
     cursor: pointer;
     font-size: 4.0rem;
-   
+    background-color: yellow;
 
 }
 #logo:hover{
     color:black;
-    background-color: lightcoral;
+    background-color: red;
 }
 #casinha{
     ion-icon{
         font-size: 4.0rem;
         color:black;
-        
+        background-color: yellow;
     }
-  
+    background-color: yellow;
     display: flex;
     border: none;
    cursor: pointer;
@@ -44,23 +46,23 @@ header{
 }
 #casinha:hover{
     ion-icon{
-        background-color: lightcoral;
+      background-color: red;
         color:black;
         border-radius: 5px;
     }
     border-radius: 5px;
-    background-color: lightcoral;
+    background-color: red;
     
 }
 h3{
     color:black;
     font-size: 4.0rem;
     cursor:default;
-  
+    background-color: yellow;
 }
 h3:hover{
     color:black;
-    background-color: lightcoral;
+    background-color: red;
     border-radius: 5px;
     
 }
@@ -103,15 +105,38 @@ li:hover{ background-color: lightcoral;
 #menu{
     ion-icon{
         font-size: 5.0rem;
-        color: brown;
+        color: black;
+        background-color: yellow;
     }
-    
+    background-color: yellow;
     border: none;
    cursor: pointer;
-   margin-left: auto;
-   display: none;
+ 
+   border: 1px solid black;
+   max-width: 100vw;
    
 }
+
+#close{
+    ion-icon{
+        font-size: 5.0rem;
+        color: black;
+        background-color: red;
+    }
+    background-color: yellow;
+    border: none;
+   cursor: pointer;
+margin: auto;
+   display: none;
+}
+
+#close:hover{
+    ion-icon{
+        background-color: red;
+        color:black;
+    }
+}
+
 #listamenu{
     list-style: none;
     font-size: 4.0rem;
@@ -119,8 +144,9 @@ li:hover{ background-color: lightcoral;
     flex-direction: column;
     text-align: center;
     background-color: yellow;
-    width: 500px;
     display: none;
+    width: 100vw;
+    height: 100vh;
     li{
         margin-top: 3px;
         font-size: 4.0rem;
@@ -129,38 +155,62 @@ li:hover{ background-color: lightcoral;
         list-style: none;
         background-color: yellow;
    } 
-   li:hover{ background-color: lightcoral;
+   li:hover{ background-color:red;
     border-radius: 5px;
+    color: black;
     }
 }
 #menu:hover{
     ion-icon{
-        background-color: lightcoral;
+        background-color: red;
         color:black;
     }
     
    
 }
 
+#div{
+    background-color: yellow;
+    display: none;
+}
 
 
 
 
 
-
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
    *{ font-size: 50%;}
    
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
+    header{align-items: center;
+    width: auto;}
 #logo, #casinha, h3{
     ion-icon{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
-    font-size: 2.5rem;}}
-    @media (max-width: 600px) {
-        #logo, #casinha, h3{
+    font-size: 3.0rem;}}
+    @media (max-width: 755px) {
+        header{
             display: none;
         }
-        #menu{display:flex}
-    }
+        #div{
+        display: block;
+        }
+        #menu{display: inline;}
+        #menu:hover{
+            ion-icon{
+                background-color: red;
+                color:black;
+            }
+            
+        }
+        }
+        #listamenu{
+            margin-top: 5.0rem;
+            gap: 5px;
+        }
+
+        
+        
+    
